@@ -1,0 +1,44 @@
+.sponsorsWrapper {
+  width: 390px;
+  height: 233px;
+  background-color: #eff4f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logoContainer {
+  width: 109.79px;
+  height: 109px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 109.79px;
+  height: 109px;
+  object-fit: contain;
+  margin: 20px;
+}
+
+.navButton {
+  background: none;
+  border: none;
+  color: #5e9a13;
+  font-size: 37px;
+  width: 22px;
+  height: 37px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton:focus {
+  outline: 2px solid #5e9a13;
+}

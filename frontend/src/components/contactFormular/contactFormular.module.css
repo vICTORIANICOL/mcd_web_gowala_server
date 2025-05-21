@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&display=swap");
+
+.kontaktBox {
+  font-family: "Frank Ruhl Libre", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.kontakt {
+  width: 330px;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+  padding-bottom: 1rem;
+}
+
+.title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+input,
+textarea {
+  width: 85%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: white;
+  color: #000000;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 20px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #000000;
+}
+
+textarea {
+  height: 130px;
+  resize: none;
+}
+
+.btn {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 20px;
+  background-color: #5e9a13;
+  border: 1px solid #5e9a13;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 273px;
+  height: 43px;
+}
+
+.sent {
+  text-align: center;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 20px;
+  color: #000000;
+  padding: 4rem 1rem;
+}

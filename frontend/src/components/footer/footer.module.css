@@ -1,0 +1,59 @@
+footer {
+  background-color: var(--lightGrey);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  height: 500px;
+  background-repeat: no-repeat;
+
+  img {
+    margin-bottom: 20px;
+  }
+  p {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+}
+
+.title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.description {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.icon {
+  color: #5e9a13;
+  font-size: 25px;
+  margin-right: 15px;
+  min-width: 25px;
+}

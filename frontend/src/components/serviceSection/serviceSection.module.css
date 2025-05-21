@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  width: 350px;
+}
+
+.image {
+  width: 350px;
+  height: 233px;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+.textDiv {
+  width: 350px;
+  margin-left: 22px;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+.content {
+  width: 341px;
+  flex: 1;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.description {
+  font-size: 15px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.checkIcon {
+  color: #5e9a13;
+  width: 24px;
+  height: 23px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}

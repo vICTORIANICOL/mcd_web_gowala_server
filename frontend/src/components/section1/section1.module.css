@@ -1,0 +1,31 @@
+.headerSection {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.headingPrimary {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 400;
+  font-size: 32px;
+  width: 302px;
+  height: 82px;
+  color: #000000;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headingSecondary {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 500;
+  font-size: 32px;
+  width: 302px;
+  height: 82px;
+  color: #000000;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

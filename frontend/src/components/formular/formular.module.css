@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&display=swap");
+
+.contactBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
+}
+
+.outerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  background-color: #eff4f8;
+  width: 360px;
+ 
+}
+
+.insideBox {
+  width: 100%;
+  max-width: 263px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.productBox {
+  display: flex;
+  gap: 15px;
+}
+
+.image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.details {
+  flex: 1;
+}
+
+.title {
+  font-family: "Frank Ruhl Libre", serif;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.price {
+  margin: 5px 0;
+  font-weight: 500;
+  color: #5e9a13;
+  font-size: 16px;
+  text-align: left;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantityControl button {
+  width: 24px;
+  height: 24px;
+  background-color: #5e9a13;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.closeBtn {
+  background-color: #5e9a13;
+  border: none;
+  border-radius: 50%;
+  color: #ffffff;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemTotalBox {
+  font-family: "Frank Ruhl Libre", serif;
+  text-align: right;
+}
+
+.itemTotal {
+  font-size: 16px;
+}
+
+.totalLabel {
+  color: #5e9a13;
+  font-weight: bold;
+}
+
+.totalPrice {
+  font-family: "Frank Ruhl Libre", serif;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.totalBox {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 500;
+  width: 263px;
+  height: 31px;
+  margin-top: 5px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: right;
+  padding-right: 20px;
+}
+
+.total {
+  font-family: "Frank Ruhl Libre", serif;
+  color: #5e9a13;
+  text-align: center;
+
+  font-weight: 500;
+}
+
+p {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 500;
+}
+
+
+.orderBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+  width: 100%;
+  border-radius: 0;
+}
+
+
+.emailInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 300px;
+  height: 43px;
+  border-radius: 0;
+}
+
+.submitBtn {
+  background-color: #5e9a13;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Frank Ruhl Libre", serif;
+  width: 300px;
+  height: 43px;
+}
+
+.submitBtn:hover {
+  background-color: #4c7c0f;
+}

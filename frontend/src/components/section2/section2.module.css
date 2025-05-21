@@ -1,0 +1,44 @@
+.headerSection {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.headingPrimary {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 600;
+  font-size: 40px;
+  width: 302px;
+  height: 52px;
+  color: #000000;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headingSecondary {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 400;
+  font-size: 36px;
+  width: 338px;
+  height: 92px;
+  color: #000000;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.4;
+  width: 302px;
+  height: 69px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 16px;
+}

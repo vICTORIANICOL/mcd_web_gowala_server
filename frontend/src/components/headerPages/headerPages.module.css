@@ -1,0 +1,40 @@
+.headerWrapper {
+  position: relative;
+  width: 390px;
+  height: 316px;
+}
+
+.headerImage {
+  width: 390px;
+  height: 316px;
+  object-fit: cover;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.headerText {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #000000;
+  margin: 0;
+}
+
+.subText {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #5e9a13;
+  margin-top: 8px;
+}

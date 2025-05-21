@@ -1,0 +1,45 @@
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  width: 363px;
+  height: 412px;
+  border-radius: 1px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 15px auto 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 142px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto 26px;
+  display: block;
+}
+
+.title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 auto 20px;
+  width: 267px;
+  height: 31px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.4;
+  width: 267px;
+  height: 109px;
+  margin: 20px auto;
+  text-align: center;
+}
