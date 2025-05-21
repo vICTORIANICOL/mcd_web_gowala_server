@@ -1,0 +1,1031 @@
+{
+	"info": {
+		"_postman_id": "dfe1d7a8-b928-4933-a947-672d4d548bf3",
+		"name": "MCDM - Gowala Farms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38584738",
+		"_collection_link": "https://mcdmviborg.postman.co/workspace/webmcdm.dk---Server-Projects~f1ca1e4d-4cb3-49f6-9664-7a010d498024/collection/38584738-dfe1d7a8-b928-4933-a947-672d4d548bf3?action=share&source=collection_link&creator=38584738"
+	},
+	"item": [
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "employees",
+					"item": [
+						{
+							"name": "Get Employees",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/employees",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "employee",
+					"item": [
+						{
+							"name": "Get Employee ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/employee/67adc5921393ee03654c9f95",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"employee",
+										"67adc5921393ee03654c9f95"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Employee",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Super Employee",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "text",
+											"value": "Description of Employee",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3042/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Employee",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "67adc6a7c23082dda98a3228",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/MCDM_Courses_2023/NextJS/boilerprojects/gowala/gowalafarms-nextjs-web/public/employees/08.jpg"
+										},
+										{
+											"key": "text",
+											"value": "Updated Description",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Anders",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3042/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Employee",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3042/employee/67adc6a7c23082dda98a3228",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"employee",
+										"67adc6a7c23082dda98a3228"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Subscribers",
+			"item": [
+				{
+					"name": "Subscribers",
+					"item": [
+						{
+							"name": "Get Subscribers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/subscriptions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"subscriptions"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Subscriber",
+					"item": [
+						{
+							"name": "Add Subscriber",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \"email\": \"media@mediacollege.dk\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3042/subscription",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"subscription"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Subscriber",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3042/subscription/67adc77cc23082dda98a322e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"subscription",
+										"67adc77cc23082dda98a322e"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "Get Products",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Get Product By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/product/67adc5921393ee03654c9f87",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"product",
+										"67adc5921393ee03654c9f87"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Milk in a jar",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "10.50",
+											"type": "text"
+										},
+										{
+											"key": "discount",
+											"value": "25",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3042/product",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Product",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "67adc858c23082dda98a3233",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "Milk Update",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "100.11",
+											"type": "text"
+										},
+										{
+											"key": "discount",
+											"value": "22",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/MCDM_Courses_2023/NextJS/boilerprojects/gowala/gowalafarms-nextjs-web/public/products/product_14.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3042/product",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Product",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/product/67adc858c23082dda98a3233",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"product",
+										"67adc858c23082dda98a3233"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Articles",
+			"item": [
+				{
+					"name": "Articles",
+					"item": [
+						{
+							"name": "Get Articles",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/articles",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"articles"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Article",
+					"item": [
+						{
+							"name": "Get Article By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/article/67adc5921393ee03654c9fa5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"article",
+										"67adc5921393ee03654c9fa5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Article",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "title",
+											"value": "Milk in a jar",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "En lang lang artikeltekst",
+											"type": "text"
+										},
+										{
+											"key": "list",
+											"value": "Listitem 1",
+											"type": "text"
+										},
+										{
+											"key": "list",
+											"value": "Listitem 2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3042/article",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"article"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Article",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/MCDM_Courses_2023/NextJS/boilerprojects/gowala/gowalafarms-nextjs-web/public/products/product_14.jpg"
+										},
+										{
+											"key": "id",
+											"value": "67adca72c23082dda98a3241",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "Milk Update",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Opdatering af en meget meget lang artikel",
+											"type": "text"
+										},
+										{
+											"key": "list",
+											"value": "ListItem 1",
+											"type": "text"
+										},
+										{
+											"key": "list",
+											"value": "ListItem 2",
+											"type": "text"
+										},
+										{
+											"key": "list",
+											"value": "ListItem 3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3042/article",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"article"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Article",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/article/67adca72c23082dda98a3241",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"article",
+										"67adca72c23082dda98a3241"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Messages",
+			"item": [
+				{
+					"name": "Message",
+					"item": [
+						{
+							"name": "Add Message",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\" : \"anders@mediacollege.dk\",\r\n    \"name\" : \"Anne\",\r\n    \"description\" : \"Ny besked til Gowala Farms\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3042/message",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"message"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Message",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/message/67adcc5c1459b1bc20473012",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"message",
+										"67adcc5c1459b1bc20473012"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Message",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\" : \"67adcc5c1459b1bc20473012\",\r\n    \"status\" : true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3042/message",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"message"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Messages",
+					"item": [
+						{
+							"name": "Get Messages",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/messages",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"messages"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Orders",
+					"item": [
+						{
+							"name": "Get Orders",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/orders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Order",
+					"item": [
+						{
+							"name": "Get Order By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3042/order/67add3451642d136a72eeb4d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"order",
+										"67add3451642d136a72eeb4d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Order",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"frederik@gmail.com\",\r\n    \"items\": [\r\n        {\r\n            \"product\": \"67aee8252952abb550049e36\",\r\n            \"quantity\": 3\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3042/order",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"order"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Order",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"products\": [{\r\n        \"id\": \"65e4a233f040254fec6d08d1\",\r\n        \"amount\" : 2\r\n    }],\r\n    \"email\" : \"frederik@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3042/order/67add5a5e04310231f94ff5d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3042",
+									"path": [
+										"order",
+										"67add5a5e04310231f94ff5d"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Get Users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server_path}}/users",
+									"host": [
+										"{{server_path}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Add User",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Postman",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "postman",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "postman@mediacollege.dk",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "role",
+											"value": "guest",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server_path}}/user",
+									"host": [
+										"{{server_path}}"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update User",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "6714ea59ecbe572ee4e02d64",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Postman Pat",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "postman@mediacollege.dk",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": [],
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "role",
+											"value": "guest",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server_path}}/user",
+									"host": [
+										"{{server_path}}"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete User",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{server_path}}/user/6714ea59ecbe572ee4e02d64",
+									"host": [
+										"{{server_path}}"
+									],
+									"path": [
+										"user",
+										"6714ea59ecbe572ee4e02d64"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get User ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server_path}}/user/6788d4cfaba2c0f23e227b11",
+									"host": [
+										"{{server_path}}"
+									],
+									"path": [
+										"user",
+										"6788d4cfaba2c0f23e227b11"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
