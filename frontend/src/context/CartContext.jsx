@@ -22,7 +22,6 @@ export const CartProvider = ({ children }) => {
       prev.filter((item) => item.cartItemId !== cartItemId)
     );
   };
-  
 
   const changeQuantity = (cartItemId, delta) => {
     setCartItems((prev) =>
@@ -33,7 +32,6 @@ export const CartProvider = ({ children }) => {
       )
     );
   };
-  
 
   return (
     <CartContext.Provider
