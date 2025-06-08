@@ -3,10 +3,13 @@ import { FaShoppingCart } from "react-icons/fa";
 import styles from "./navbar.module.css";
 import Logo from "/logo.png";
 import blobImage from "../../assets/blob_01.jpg";
+import { useCart } from "../../context/CartContext";
 
-export default function Navbar({ isOpen, setIsOpen, cartCount }) {
+export default function Navbar({ isOpen, setIsOpen /* cartCount  */ }) {
   const location = useLocation();
   const currentPath = location.pathname;
+  const { cartItems } = useCart(); 
+  const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0); 
 
   return (
     <>

@@ -5,9 +5,9 @@ import { BrowserRouter } from "react-router-dom";
 import { CartProvider } from "./context/CartContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <CartProvider>
+  <CartProvider>
+    <BrowserRouter>
       <App />
-    </CartProvider>
-  </BrowserRouter>
+    </BrowserRouter>
+  </CartProvider>
 );
