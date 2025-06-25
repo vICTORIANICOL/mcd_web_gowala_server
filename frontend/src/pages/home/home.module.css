@@ -4,6 +4,11 @@
   gap: 20px;
   justify-content: center;
   margin-top: 40px;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .buttonWrapper {
@@ -11,16 +16,40 @@
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 60px;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .seAlleProdukter {
   background-color: #5e9a13;
   color: #ffffff;
   border: none;
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
   font-weight: 600;
-  padding: 12px 28px;
+  padding: clamp(10px, 2vw, 12px) clamp(20px, 4vw, 28px);
   border-radius: 50px;
   cursor: pointer;
   font-family: Roboto, sans-serif;
+  width: 100%;
+  max-width: 300px;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .productsGrid {
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .buttonWrapper {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productsGrid {
+    gap: 10px;
+    margin-top: 20px;
+  }
 }

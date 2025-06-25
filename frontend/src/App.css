@@ -1,0 +1,101 @@
+.sponsors {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.sponsorLogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.sponsorLogos img {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.sponsorLogos img:hover {
+  filter: none;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.serviceCard img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+}
+
+.serviceCard .cardTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #5e9a13;
+}
+
+.serviceCard .cardSubtitle {
+  font-size: 1rem;
+  max-width: 600px;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .serviceCard {
+    flex-direction: row;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .serviceCard img {
+    margin-bottom: 0;
+  }
+
+  .serviceCard .cardText {
+    max-width: 600px;
+  }
+}
+
+.section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section h3 {
+  font-size: 1rem;
+  color: #5e9a13;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #444;
+}
+
+@media (min-width: 768px) {
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .section h3 {
+    font-size: 1.2rem;
+  }
+}

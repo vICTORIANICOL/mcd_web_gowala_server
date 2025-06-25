@@ -7,6 +7,12 @@ footer {
   height: 500px;
   background-repeat: no-repeat;
 
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
   img {
     margin-bottom: 20px;
   }
